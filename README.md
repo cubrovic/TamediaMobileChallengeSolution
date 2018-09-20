@@ -1,4 +1,4 @@
-#Tamedia mobila challenge solution
+# Tamedia mobila challenge solution
 
 
 ## Functionality and how it works
