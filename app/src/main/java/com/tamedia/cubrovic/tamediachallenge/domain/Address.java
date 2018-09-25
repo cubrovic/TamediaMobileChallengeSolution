@@ -1,4 +1,4 @@
-package com.tamedia.cubrovic.tamediachallenge.business;
+package com.tamedia.cubrovic.tamediachallenge.domain;
 
 public class Address {
     private Geo geo;

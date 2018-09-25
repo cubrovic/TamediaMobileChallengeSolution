@@ -1,4 +1,4 @@
-package com.tamedia.cubrovic.tamediachallenge.business;
+package com.tamedia.cubrovic.tamediachallenge.domain;
 
 public class User {
     private String id;

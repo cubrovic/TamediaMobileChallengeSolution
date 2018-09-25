@@ -41,5 +41,19 @@
 - Note: I have some basic knowledge on Android integration tests but I didn't use it in my practice so far.
 
 
+# Changes (since first iteration)
+
+- Eliminated boilerplate code for UI binding by using annotations with [Butter Knife](https://jakewharton.github.io/butterknife/)
+- Introduced MVP pattern (see for example [here](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter))to decouple business logic from UI 
+ (MainAtivity implements PostView, PostPresenterImpl implements PostPresenter and PostDataModel for data and business logic)
+- Separated data loading and saving in DataHelperImpl implementation of DataHelper
+- Separated network requests through ControlNetwork via DataHelperImpl implementation of DataHelper
+- Introduced [EventBus](https://github.com/greenrobot/EventBus) use and Events to notify listener on network request completed.
+- Separeted json related code to ControlConverter class
+- Created junit tests to test PostsDataModel class (see PostsDataModelTest)
+- Used [Mockito](https://site.mockito.org/) framework for mocking objects in tests
+
+
+
 # How to build and run app
-Import this as a project in Android Studio to build and run app.
+- Import this as a project in Android Studio to build and run app.

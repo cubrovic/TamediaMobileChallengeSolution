@@ -10,17 +10,17 @@ public class ListAdapterPosts extends android.widget.BaseAdapter {
 
     }
 
-    protected java.util.List<com.tamedia.cubrovic.tamediachallenge.business.Post> listPost;
+    private java.util.List<com.tamedia.cubrovic.tamediachallenge.domain.Post> listPost;
 
-    public static final String VPPOST_ITEM = "VPPostItem";
+    private static final String VPPOST_ITEM = "VPPostItem";
 
-    public java.util.List<com.tamedia.cubrovic.tamediachallenge.business.Post> getListPosts() {
+    public java.util.List<com.tamedia.cubrovic.tamediachallenge.domain.Post> getListPosts() {
         return listPost;
     }
 
     private final android.app.Activity activity;
 
-    public ListAdapterPosts(final android.app.Activity activity, final java.util.List<com.tamedia.cubrovic.tamediachallenge.business.Post> listPost) {
+    public ListAdapterPosts(final android.app.Activity activity, final java.util.List<com.tamedia.cubrovic.tamediachallenge.domain.Post> listPost) {
         super();
         this.activity = activity;
         this.listPost = listPost;
@@ -64,7 +64,7 @@ public class ListAdapterPosts extends android.widget.BaseAdapter {
         final android.widget.TextView textViewTitle = viewHolder.textViewTitle;
         final android.widget.TextView textViewBody = viewHolder.textViewBody;
 
-        final com.tamedia.cubrovic.tamediachallenge.business.Post post = listPost.get(position);
+        final com.tamedia.cubrovic.tamediachallenge.domain.Post post = listPost.get(position);
         if (textViewTitle != null) {
             textViewTitle.setText(post.getTitle());
         }

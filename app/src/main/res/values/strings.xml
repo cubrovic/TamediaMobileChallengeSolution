@@ -7,7 +7,7 @@
     <string name="ok_message_new_post">New post is created successfully.</string>
 
     <string name="error_wrong_email_input">You didn\'t enter an email address in valid format.</string>
-    <string name="error_wrong_new_post_input">You didn\'t enter title for new post.</string>
+    <string name="error_wrong_new_post_title">You didn\'t enter title for new post.</string>
     <string name="error_wrong_new_post_text">You didn\'t enter text for new post.</string>
     <string name="error_networking">Some networking error have occured. We can\'t process your request at this time.</string>
     <string name="error_no_user_for_this_email">We couldn\'t find any user for email address you have enter. Please try with different email address.</string>
